@@ -1,0 +1,45 @@
+.app {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+  .cover {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    margin-top: 250px;
+    animation: cover-spin infinite 20s linear;
+    &.stop {
+      animation-play-state: paused;
+    }
+  }
+  .controls {
+    width: 100%;
+    color: rgba(255, 255, 255, .7);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 100px;
+    .prev {
+      font-size: 60px;
+    }
+    .play {
+      font-size: 140px;
+    }
+    .next {
+      font-size: 60px;
+    }
+  }
+}
+
+@keyframes cover-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

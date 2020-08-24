@@ -2,8 +2,8 @@
  * @Author: 张伟伦
  * @Date: 2020-08-17 13:51:02
  * @LastEditors: 张伟伦
- * @LastEditTime: 2020-08-17 13:54:17
- * @FilePath: /netease_cloud_music/src/utils/utils.js
+ * @LastEditTime: 2020-08-18 14:09:25
+ * @FilePath: /remax-netease-cloudmusic/src/utils/utils.js
  */
 
 const unitTransformation = (count) => {

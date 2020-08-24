@@ -1,7 +1,9 @@
 const pages = [
+  "pages/tabbars/library/index",
   'pages/index/index',
+  "pages/mine/index",
   "pages/details/index",
-  "pages/play/index"
+  "pages/login/index"
 ];
 
 module.exports.ali = {
@@ -16,7 +18,24 @@ module.exports.wechat = {
   pages,
   window: {
     navigationBarTitleText: '',
-    navigationBarBackgroundColor: '#282c34',
+    navigationBarTextStyle: 'black',
+    navigationBarBackgroundColor: '#FFFFFF',
+  },
+  tabBar: {
+    color: '#AAAAAA',
+    selectedColor: "#333333",
+    backgroundColor: "#FFFFFF",
+    list: [{
+      pagePath: "pages/tabbars/library/index",
+      text: "热门歌单",
+      iconPath: "/images/tabbar/list-unselect-icon.png",
+      selectedIconPath: "/images/tabbar/list-selected-icon.png"
+    }, {
+      pagePath: "pages/mine/index",
+      text: "我的",
+      iconPath: "/images/tabbar/mine-unselect-icon.png",
+      selectedIconPath: "/images/tabbar/mine-selected-icon.png"
+    }]
   },
   requiredBackgroundModes: ["audio"]
 };

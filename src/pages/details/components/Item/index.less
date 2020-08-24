@@ -5,7 +5,7 @@
   padding-top: 40px;
   height: calc(100% - 40px);
   .index {
-    color: rgba(255, 255, 255, .5);
+    color: #333333;
     font-size: 28px;
     width: 90px;
     text-align: center;
@@ -15,7 +15,7 @@
     flex-direction: column;
     width: calc(100% - 120px);
     .name {
-      color: #ffffff;
+      color: #333333;
       font-size: 32px;
       text-overflow: -o-ellipsis-lastline;
       overflow: hidden;
@@ -26,9 +26,16 @@
       -webkit-box-orient: vertical;
     }
     .artist {
-      color: rgba(255, 255, 255, .7);
+      color: #333333;
       font-size: 24px;
       margin-top: 4px;
+      text-overflow: -o-ellipsis-lastline;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      line-clamp: 1;
+      -webkit-box-orient: vertical;
     }
   }
 }

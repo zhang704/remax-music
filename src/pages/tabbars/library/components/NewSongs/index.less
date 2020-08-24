@@ -1,0 +1,14 @@
+.list {
+  .songs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    .item {
+      margin-top: 28px;
+      &:not(:nth-child(3n)) {
+        margin-right: 20px;
+      }
+    }
+  }
+}

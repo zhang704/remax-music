@@ -7,7 +7,7 @@ module.exports = {
   plugins: [
     less({}),
     RemaxIconfontPlugin({
-      cssURL: "http://at.alicdn.com/t/font_1665529_pd95y6nwlrd.css"
+      cssURL: "http://at.alicdn.com/t/font_1665529_ob9tesnn3ei.css"
     })
   ],
 };

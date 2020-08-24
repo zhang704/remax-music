@@ -1,4 +1,6 @@
-# 网易云音乐 For Remax
+# Remax Music
+
+> 根据网易云音乐的相关接口，自己的相关界面来进行搭建
 
 ## 技术栈
 
@@ -6,11 +8,11 @@
   + remax
   + JavaScript
 + 后端
-  + [接口](http://api.music.zhangweilun.com/)
-  + [相关文档](http://docs.music.zhangweilun.com/)
+  + [相关文档](https://binaryify.github.io/NeteaseCloudMusicApi)
 
 ## TODO
 
+- [x] 首页
 - [x] 热门歌单
 - [x] 歌单详情
 - [x] 播放音乐

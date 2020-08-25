@@ -1,9 +1,9 @@
 const pages = [
   "pages/tabbars/library/index",
-  'pages/index/index',
-  "pages/mine/index",
+  "pages/tabbars/mine/index",
   "pages/details/index",
-  "pages/login/index"
+  "pages/login/index",
+  "pages/play/index"
 ];
 
 module.exports.ali = {
@@ -31,7 +31,7 @@ module.exports.wechat = {
       iconPath: "/images/tabbar/list-unselect-icon.png",
       selectedIconPath: "/images/tabbar/list-selected-icon.png"
     }, {
-      pagePath: "pages/mine/index",
+      pagePath: "pages/tabbars/mine/index",
       text: "我的",
       iconPath: "/images/tabbar/mine-unselect-icon.png",
       selectedIconPath: "/images/tabbar/mine-selected-icon.png"

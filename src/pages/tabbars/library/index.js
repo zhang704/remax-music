@@ -2,14 +2,14 @@
  * @Author: 张伟伦
  * @Date: 2020-08-24 14:49:14
  * @LastEditors: 张伟伦
- * @LastEditTime: 2020-08-24 17:08:34
+ * @LastEditTime: 2020-08-25 14:09:23
  * @FilePath: /remax-music/src/pages/tabbars/library/index.js
  */
 import React, { useContext, useEffect, useState } from 'react';
 import { ScrollView } from 'remax/wechat';
 import { View } from 'remax/one';
-import Navbar from '../../../components/NavBar';
-import { SystemInfoContext } from '../../../app';
+import Navbar from '@components/NavBar';
+import { SystemInfoContext } from '@/app';
 import styles from './index.less';
 import Carousel from './components/Carousel';
 import Menu from './components/Menu';

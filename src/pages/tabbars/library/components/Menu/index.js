@@ -2,16 +2,16 @@
  * @Author: 张伟伦
  * @Date: 2020-08-24 16:10:32
  * @LastEditors: 张伟伦
- * @LastEditTime: 2020-08-24 16:13:39
+ * @LastEditTime: 2020-08-25 14:09:41
  * @FilePath: /remax-music/src/pages/tabbars/library/components/Menu/index.js
  */
 import React from 'react';
 import { View, Image, Text } from 'remax/one';
 import styles from './index.less';
-import FMIcon from '../../../../../images/menu/fm-icon.png';
-import RankIcon from '../../../../../images/menu/rank-icon.png';
-import CatsIcon from '../../../../../images/menu/cats-icon.png';
-import SongerIcon from '../../../../../images/menu/songer-icon.png';
+import FMIcon from '@images/home-menu/fm-icon.png';
+import RankIcon from '@images/home-menu/rank-icon.png';
+import CatsIcon from '@images/home-menu/cats-icon.png';
+import SongerIcon from '@images/home-menu/songer-icon.png';
 const List = [{
   icon: FMIcon,
   text: "隨心FM"

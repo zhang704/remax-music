@@ -2,15 +2,15 @@
  * @Author: 张伟伦
  * @Date: 2020-08-24 17:06:18
  * @LastEditors: 张伟伦
- * @LastEditTime: 2020-08-24 17:21:50
+ * @LastEditTime: 2020-08-25 14:10:02
  * @FilePath: /remax-music/src/pages/tabbars/library/components/SongList/index.js
  */
 import React, { useEffect, useState } from 'react';
 import { View } from 'remax/one';
 import { ScrollView } from 'remax/wechat';
-import ArrowCell from '../../../../../components/ArrowCell';
-import Item from '../../../../../components/SongSheetItem';
-import axios from '../../../../../utils/axios';
+import ArrowCell from '@components/ArrowCell';
+import Item from '@components/SongSheetItem';
+import axios from '@utils/axios';
 import styles from './index.less';
 const ListUrl = "/personalized";
 

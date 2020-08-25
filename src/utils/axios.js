@@ -2,12 +2,13 @@
  * @Author: 张伟伦
  * @Date: 2020-08-17 11:05:21
  * @LastEditors: 张伟伦
- * @LastEditTime: 2020-08-17 17:44:59
- * @FilePath: /netease_cloud_music/src/utils/axios.js
+ * @LastEditTime: 2020-08-25 15:18:17
+ * @FilePath: /remax-music/src/utils/axios.js
  */
 
-import { request, showLoading, hideLoading } from 'remax/wechat';
+import { request, showLoading, hideLoading, showModal } from 'remax/wechat';
 const BaseURL = "http://api.music.zhangweilun.com";
+const SUCCESSCODE = 200;
 
 const axios = (url, data = {}) => new Promise((resolve, reject) => {
   showLoading({
@@ -24,7 +25,16 @@ const axios = (url, data = {}) => new Promise((resolve, reject) => {
     method: 'POST',
     dataType: 'json',
     success: (result) => {
-      resolve(result.data);
+      if (result.data.code === SUCCESSCODE) {
+        resolve(result.data);
+      } else {
+        const { message } = result.data;
+        showModal({
+          title: '提示',
+          content: message,
+          showCancel: false
+        });
+      }
     },
     fail: () => { },
     complete: () => {

@@ -2,15 +2,15 @@
  * @Author: 张伟伦
  * @Date: 2020-08-24 16:20:56
  * @LastEditors: 张伟伦
- * @LastEditTime: 2020-08-24 16:53:42
+ * @LastEditTime: 2020-08-25 14:09:51
  * @FilePath: /remax-music/src/pages/tabbars/library/components/NewSongs/index.js
  */
 import React, { useEffect, useState } from 'react';
 import { View } from 'remax/one';
-import axios from '../../../../../utils/axios';
+import axios from '@utils/axios';
 import styles from './index.less';
-import Item from '../../../../../components/SongItem';
-import ArrowCell from '../../../../../components/ArrowCell';
+import Item from '@components/SongItem';
+import ArrowCell from '@components/ArrowCell';
 const SongsUrl = "/top/song";
 
 const NewSongs = () => {

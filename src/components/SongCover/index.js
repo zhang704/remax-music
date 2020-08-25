@@ -10,7 +10,7 @@ import React from 'react';
 import { View, Image, Text } from 'remax/wechat';
 import Icon from 'remax-iconfont-component';
 import styles from './index.less';
-import { unitTransformation } from '../../utils/utils';
+import { unitTransformation } from '@utils/utils';
 
 const SongSheetItem = ({ picUrl, playCount, size }) => {
   return (

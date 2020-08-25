@@ -2,15 +2,15 @@
  * @Author: 张伟伦
  * @Date: 2020-08-17 14:58:37
  * @LastEditors: 张伟伦
- * @LastEditTime: 2020-08-17 15:00:14
- * @FilePath: /netease_cloud_music/src/pages/details/components/Header/index.js
+ * @LastEditTime: 2020-08-25 14:10:30
+ * @FilePath: /remax-music/src/pages/details/components/Header/index.js
  */
 
 import React from 'react';
 import { View, Image, Text } from 'remax/one';
 import Icon from 'remax-iconfont-component';
 import styles from './index.less';
-import SongCover from '../../../../components/SongCover';
+import SongCover from '@components/SongCover';
 
 export default ({ info }) => {
   const { coverImgUrl, playCount, description = '', name, creator = {} } = info;

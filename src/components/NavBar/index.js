@@ -1,8 +1,8 @@
-import React, { Component, useContext, useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { usePageEvent } from 'remax/macro';
 import { getSystemInfoSync, getMenuButtonBoundingClientRect, navigateBack } from 'remax/wechat';
 import { View } from 'remax/one';
-import { SystemInfoContext } from '../../app';
+import { SystemInfoContext } from '@/app';
 import _isObject from 'lodash/isObject';
 import _isFunction from 'lodash/isFunction';
 import './index.less';

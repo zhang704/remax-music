@@ -2,8 +2,8 @@
  * @Author: 张伟伦
  * @Date: 2020-08-17 17:28:58
  * @LastEditors: 张伟伦
- * @LastEditTime: 2020-08-18 10:07:06
- * @FilePath: /netease_cloud_music/src/pages/play/index.js
+ * @LastEditTime: 2020-08-25 14:10:16
+ * @FilePath: /remax-music/src/pages/play/index.js
  */
 import React, { useState } from 'react';
 import Icon from 'remax-iconfont-component';
@@ -12,7 +12,7 @@ import { View, Image } from 'remax/one';
 import { getBackgroundAudioManager } from 'remax/wechat';
 import { setNavigationBarTitle } from 'remax/wechat';
 import styles from './index.less';
-import axios from '../../utils/axios';
+import axios from '@utils/axios';
 
 const backAudioManager = getBackgroundAudioManager();
 const Play = ({ location }) => {

@@ -2,15 +2,15 @@
  * @Author: 张伟伦
  * @Date: 2020-08-17 13:38:36
  * @LastEditors: 张伟伦
- * @LastEditTime: 2020-08-17 17:25:40
- * @FilePath: /netease_cloud_music/src/pages/details/index.js
+ * @LastEditTime: 2020-08-25 14:10:39
+ * @FilePath: /remax-music/src/pages/details/index.js
  */
 import React, { useState } from 'react';
 import RecycleView from 'remax-recycle-view/lib/index';
 import { usePageEvent } from 'remax/macro';
 import { View } from 'remax/one';
 import styles from './index.less';
-import axios from '../../utils/axios';
+import axios from '@utils/axios';
 import Header from './components/Header';
 import Item from './components/Item';
 
